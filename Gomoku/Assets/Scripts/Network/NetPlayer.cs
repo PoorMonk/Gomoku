@@ -49,7 +49,7 @@ public class NetPlayer : NetworkBehaviour {
         if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
         {
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log((int)(pos.x) + "*" + (int)(pos.y));
+            //Debug.Log((int)(pos.x) + "*" + (int)(pos.y));
             if (pos.x < 8 && -8 < pos.x && pos.y < 8 && -8 < pos.y)
             {
                 CmdChess(pos);

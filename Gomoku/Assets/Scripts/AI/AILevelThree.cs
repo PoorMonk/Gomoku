@@ -158,12 +158,12 @@ public class AILevelThree : Player {
                     if (grid[rx, ry] == iChess)
                     {
                         iAllNum++;
-                        str = "a" + str;
+                        str += "a";
                     }
                     else if (grid[rx, ry] == 0)
                     {
                         iAllNum++;
-                        str = "_" + str;
+                        str += "_";
                         if (!lStop)
                         {
                             lFirst = true;

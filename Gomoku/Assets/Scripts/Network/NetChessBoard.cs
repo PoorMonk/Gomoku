@@ -11,13 +11,13 @@ public class NetChessBoard : NetworkBehaviour {
     public int[,] m_grid;
     public GameObject[] m_chesses;
     public float m_timer = 0.0f;
-    [SyncVar]public PlayerType m_turn;
     Transform m_chessParent;
-    [SyncVar]public bool m_isGameOver = true;
     [HideInInspector] public Stack<GameObject> m_chessStack = new Stack<GameObject>();
     public Text m_winnerText;
 
+    [SyncVar] public PlayerType m_turn;
     [SyncVar] public int m_playerNum = 0;
+    [SyncVar] public bool m_isGameOver = true;
 
     public static NetChessBoard Instance
     {
